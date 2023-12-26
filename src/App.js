@@ -124,6 +124,7 @@ export default function App() {
           )}
         </Box>
       </Main>
+      <Footer />
     </>
   );
 }
@@ -417,6 +418,33 @@ function NumResults({ movies }) {
   return (
     <p className="num-results">
       Found <strong>{movies.length}</strong> results
+    </p>
+  );
+}
+
+function Footer() {
+  return (
+    <p
+      style={{
+        color: '#adb5bd',
+        fontSize: '12px',
+        padding: '16px 0',
+        display: 'block',
+        textAlign: 'center',
+      }}
+    >
+      {' '}
+      &copy; Copyright by{' '}
+      <a
+        style={{ color: 'inherit' }}
+        target="_blank"
+        rel="noreferrer"
+        href="https://twitter.com/jonasschmedtman"
+      >
+        Jonas Schmedtmann
+      </a>
+      . Use for learning or your portfolio. Don't use to teach. Don't claim as
+      your own.{' '}
     </p>
   );
 }
